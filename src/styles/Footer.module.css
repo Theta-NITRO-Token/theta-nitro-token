@@ -1,0 +1,16 @@
+.footer {
+    background: rgb(9, 0, 18);
+    color: var(--bs-gray);
+    font-family: var(--font-base);
+}
+
+.iconCircle {
+    background: rgb(142, 36, 170);
+    border-radius: 20px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

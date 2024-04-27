@@ -1,0 +1,42 @@
+/* styles.module.css */
+.container {
+    font-family: Montserrat, sans-serif;
+}
+
+.roadmapContainer {
+    height: 200px;
+    background: rgba(0, 0, 0, 0.36);
+    border-style: solid;
+    border-color: rgb(9, 0, 18);
+    max-width: 400px;
+    width: 400px;
+    box-shadow: -15px -10px 0px rgba(9, 0, 18, 0.24);
+    border-radius: 30px;
+}
+
+.heading {
+    color: var(--bs-body-bg);
+    text-align: center;
+    font-weight: bold;
+}
+
+.paragraph {
+    color: var(--bs-body-bg);
+    text-align: center;
+    white-space: pre-line;
+}
+
+/* Media query for smaller screens (< 992px) */
+@media (max-width: 991px) {
+    .paragraph {
+        font-size: 15px; /* Decrease text size to 12px */
+    }
+}
+
+/* Media query for smaller screens (< 768px) */
+@media (max-width: 767px) {
+    .roadmap {
+        margin-top: 10px !important; /* Always set margin top to 20px */
+        margin-bottom: 10px; /* Always set margin bottom to 20px */
+    }
+}

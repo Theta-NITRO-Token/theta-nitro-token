@@ -1,0 +1,96 @@
+.container {
+    width: 100%;
+    background: linear-gradient(7deg, rgb(9,0,18) 0%, #320063 33%, #8e24aa);
+    min-height: 80vh;
+}
+
+.heading {
+    font-family: Montserrat, sans-serif;
+    color: rgb(255,255,255);
+    letter-spacing: 4px;
+    text-align: center;
+    line-height: 39.496px;
+    font-size: 30px;
+    margin: 20px;
+    padding-top: 50px;
+}
+
+.nftBurnContainer {
+    background: rgba(0,0,0,0.36);
+    border-style: solid;
+    border-color: rgb(9,0,18);
+    max-width: 400px;
+    width: 400px;
+    margin-top: 36px;
+    box-shadow: -15px -10px 0px rgba(9,0,18,0.24);
+    border-radius: 30px;
+}
+
+.subHeading {
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    color: #8e24aa;
+    margin-top: 20px;
+}
+
+.mySelect {
+    margin: 5px 12px;
+    background: rgba(142,36,170,0.27);
+    color: var(--bs-body-bg);
+    text-align: center;
+    border-radius: 10px;
+    padding: 4px 6px;
+    border-style: solid;
+    border-color: rgb(142,36,170);
+}
+
+.mySelect:focus {
+    border-color: rgb(162, 56, 190); /* A slightly different border color on focus */
+    box-shadow: 0 0 5px rgba(162, 56, 190, 0.75); /* Adding a glow effect on focus */
+}
+
+.mySelect option:focus {
+    background-color: rgb(162, 56, 190); /* Darker background for selected option */
+    color: white; /* White text for better contrast on selection */
+}
+
+.mySelect:focus option:checked {
+    background: rgb(162, 56, 190) linear-gradient(0deg, rgb(162, 56, 190) 0%, rgb(162, 56, 190) 100%);
+}
+
+.info {
+    color: var(--bs-body-bg);
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.button {
+    background: #8e24aa;
+    border-color: #8e24aa;
+    padding: 15px 30px;
+    /*box-shadow: -5px 5px 2px 0px rgba(142,36,170,0.5);*/
+    margin-bottom: 20px;
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.button:hover {
+    background: #83219d;
+    border-color: rgb(142, 36, 170);
+    color: white;
+}
+
+.button:focus {
+    outline: none !important; /* Remove the default focus outline */
+    background: #8e24aa !important;
+    border-color: rgb(142, 36, 170)!important;
+    color: white;
+}
+
+.tokenImageLarge{
+    border-radius: 20px;
+}

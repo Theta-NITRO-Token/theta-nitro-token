@@ -1,0 +1,39 @@
+/* Navbar.module.css */
+.navbar {
+    font-family: var(--font-base);
+    background: linear-gradient(179deg, rgb(9,0,18), rgb(42,9,56) 28%, #8e24aa), rgb(9,0,18);
+    color: rgb(255,255,255);
+    font-size: 18px;
+}
+
+.brand {
+    letter-spacing: 4px;
+    color: rgb(255,255,255);
+    font-size: 25px;
+}
+
+.brand:hover {
+    cursor: pointer;
+    color: rgb(255,255,255) !important;
+}
+
+.highlight {
+    /* Add your highlight styles here */
+    color: rgb(200, 200, 200) !important;
+}
+
+.highlight:hover {
+    cursor: pointer;
+    color: rgb(255,255,255) !important;
+}
+
+.highlightSelected {
+    /* Add your selected highlight styles here */
+
+    font-weight: bold !important;
+    color: rgb(255,255,255) !important;
+}
+
+.highlightSelected:hover {
+    cursor: pointer;
+}

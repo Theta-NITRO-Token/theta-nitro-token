@@ -1,0 +1,192 @@
+/* styles/HeroSection.module.css */
+.heroSection {
+	width: 100%;
+	background: linear-gradient(7deg, rgb(9,0,18) 0%, rgb(9,0,18) 9%, #320063 33%, #8e24aa);
+	min-height: 700px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.divHero {
+	justify-content: space-between;
+}
+
+.title {
+	color: #fff;
+	font-size: 400%;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 15px;
+	line-height: 79.256px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.subtitle {
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 21px;
+	line-height: normal;
+	letter-spacing: 5px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.statsTitle {
+	color: #fff;
+	text-align: center;
+}
+
+.statsValue {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+
+.tokenImage {
+	width: 30px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	border-radius: 15px;
+}
+
+.tokenImageLarge {
+	width: 35px;
+	margin: 5px 10px 12px 5px;
+	border-radius: 18px;
+}
+
+.buyButton {
+	background: #8e24aa;
+	border-color: #8e24aa;
+	padding: 15px 30px;
+	box-shadow: -5px 5px 2px 0px rgba(142,36,170,0.5);
+	margin-bottom: 50px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+
+.buyButton:hover {
+	background: #83219d;
+	border-color: rgb(142, 36, 170);
+}
+
+.buyButton:focus {
+	outline: none !important; /* Remove the default focus outline */
+	background: #8e24aa !important;
+	border-color: rgb(142, 36, 170)!important;
+}
+
+.sectionRoadmap {
+	width: 100%;background: linear-gradient(7deg, rgb(9,0,18) 0%, #320063 33%, #8e24aa 96%, #8e24aa);
+}
+
+.titleRoadmap {
+	font-family: Montserrat, sans-serif;
+	color: rgb(255,255,255);
+	letter-spacing: 6px;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	font-size: 45px;
+}
+
+.containerRoadmap {
+	padding-bottom: 50px;
+}
+
+
+/* styles.module.css */
+.sectionContainer {
+	width: 100%;
+	background: linear-gradient(173deg, rgb(9,0,18), rgb(9,0,18) 5%, #320062 33%, #8e24aa 98%);
+	min-height: 80vh;
+}
+
+.sectionTitle {
+	font-family: Montserrat, sans-serif;
+	color: rgb(255,255,255);
+	letter-spacing: 6px;
+	text-align: center;
+	padding-top: 50px;
+	font-size: 45px;
+}
+
+.textBoxContainer {
+	background: rgba(0,0,0,0.36);
+	border-style: solid;
+	border-color: rgb(9,0,18);
+	max-width: 400px;
+	width: 400px;
+	margin-top: 36px;
+	box-shadow: -15px -10px 0px rgba(9,0,18,0.24);
+	border-radius: 30px;
+}
+
+.inputField {
+	width: 80%;
+	height: 50px;
+	border-color: rgb(142,36,170);
+	border-radius: 10px;
+	background: rgba(142,36,170,0.27);
+	margin-top: 20px;
+	font-family: Montserrat, sans-serif;
+	color: var(--bs-body-bg);
+	font-size: 25px;
+	text-align: center;
+	margin-left: 35px;
+}
+
+.inputField::placeholder {
+	color: var(--bs-body-bg);
+}
+
+.infoText {
+	color: var(--bs-body-bg);
+	text-align: center;
+	font-family: Montserrat, sans-serif;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+.button {
+	background: #8e24aa;
+	border-color: #8e24aa;
+	padding: 15px 30px;
+	/*box-shadow: -5px 5px 2px 0px rgba(142,36,170,0.5);*/
+	margin-bottom: 20px;
+	margin-top: 15px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	color: white;
+}
+
+.button:hover {
+	background: #83219d;
+	border-color: rgb(142, 36, 170);
+	color: white;
+}
+
+.button:focus {
+	outline: none !important; /* Remove the default focus outline */
+	background: #8e24aa !important;
+	border-color: rgb(142, 36, 170)!important;
+	color: white;
+}
+
+.titleRedeem {
+	font-family: Montserrat, sans-serif;
+	color: rgb(255, 255, 255);
+	letter-spacing: 6px;
+	text-align: center;
+	padding-top: 20px;
+	font-size: 45px;
+}
+
+.redeemContainer {
+	padding-bottom: 50px;
+}

@@ -1,0 +1,86 @@
+.textBoxContainer {
+    background: rgba(0,0,0,0.36);
+    border-style: solid;
+    border-color: rgb(9,0,18);
+    max-width: 400px;
+    width: 400px;
+    margin-top: 36px;
+    box-shadow: -15px -10px 0px rgba(9,0,18,0.24);
+    border-radius: 30px;
+}
+
+.inputField {
+    width: 80%;
+    height: 50px;
+    border-color: rgb(142,36,170);
+    border-radius: 10px;
+    background: rgba(142,36,170,0.27);
+    margin-top: 20px;
+    font-family: Montserrat, sans-serif;
+    color: var(--bs-body-bg);
+    font-size: 25px;
+    text-align: center;
+    margin-left: 35px;
+    margin-bottom: 5px;
+}
+
+.inputField::placeholder {
+    color: var(--bs-body-bg);
+}
+
+.infoText {
+    color: var(--bs-body-bg);
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    /*font-weight: bold;*/
+    /*margin-top: 5px;*/
+    margin-bottom: 0;
+}
+
+.button {
+    background: #8e24aa;
+    border-color: #8e24aa;
+    padding: 15px 30px;
+    /*box-shadow: -5px 5px 2px 0px rgba(142,36,170,0.5);*/
+    margin-bottom: 20px;
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.button:hover {
+    background: #83219d;
+    border-color: rgb(142, 36, 170);
+    color: white;
+}
+
+.button:focus {
+    outline: none !important; /* Remove the default focus outline */
+    background: #8e24aa !important;
+    border-color: rgb(142, 36, 170)!important;
+    color: white;
+}
+
+.maxText {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    font-size: 12px;
+    color: #8e24aa;
+}
+
+.maxText:hover {
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: 5px;
+    font-size: 12px;
+    color: #d535ff;
+}
+
+.countdown{
+    color: white;
+    padding: 10px
+}

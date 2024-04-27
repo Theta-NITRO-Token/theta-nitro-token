@@ -1,0 +1,43 @@
+.section {
+    width: 100%;background: linear-gradient(7deg, rgb(9,0,18) 0%, #320063 33%, #8e24aa);
+}
+
+.title {
+    font-family: Montserrat, sans-serif;
+    color: rgb(255,255,255);
+    letter-spacing: 6px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 45px;
+}
+
+.container {
+    padding-bottom: 50px;
+}
+
+/* ButtonComponent.module.css */
+.buttonContainer {
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.button {
+    background: #8e24aa;
+    border-color: rgb(142, 36, 170);
+    padding: 15px 30px;
+    box-shadow: -5px 5px 2px 0px rgba(142, 36, 170, 0.5);
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #83219d;
+    border-color: rgb(142, 36, 170);
+}
+
+.button:focus {
+    outline: none !important; /* Remove the default focus outline */
+    background: #8e24aa !important;
+    border-color: rgb(142, 36, 170)!important;
+}
