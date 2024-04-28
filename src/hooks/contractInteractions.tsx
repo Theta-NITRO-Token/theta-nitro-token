@@ -1,7 +1,7 @@
 import {ethers, parseUnits} from "ethers";
 import UniversalProvider from '@walletconnect/universal-provider'
 
-const NITRO_TOKEN_ADDRESS = '0x9950e7c7e2ff63fea95bfcc17e1f4916ef9e7917';
+const NITRO_TOKEN_ADDRESS = '0x29a7e256ed510e2249713347ce8f441fab6aab28';
 const NITRO_NFT_ADDRESS = '0x94a172bc5c76cdf3ea08d50690a99598194c840e';
 const REFERRAL_NFT_ADDRESS = '0x186ce83ec313488e8ce922f36e3291b730e2181f';
 const RPC = 'https://eth-rpc-api-testnet.thetatoken.org/rpc';
