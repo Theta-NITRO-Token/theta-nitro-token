@@ -11,14 +11,22 @@ interface ActiveTimeState {
     time: number;
 }
 
+interface NotificationState {
+    show: boolean;
+    message: string;
+    isSuccess: boolean;
+}
+
 interface GlobalState {
     tokenAmounts: TokenAmountState;
     isActiveTime: ActiveTimeState;
+    notification: NotificationState;
 }
 
 const { useGlobalState, setGlobalState, getGlobalState } = createGlobalState<GlobalState>({
     tokenAmounts: {nitro:0,tfuel:0},
-    isActiveTime: {isActive: false, time: 0}
+    isActiveTime: {isActive: false, time: 0},
+    notification: {show: false, message:'', isSuccess: false}
 });
 
 

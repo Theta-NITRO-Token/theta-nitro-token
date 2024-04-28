@@ -10,6 +10,7 @@ import blockchainInteraction from "./../hooks/contractInteractions";
 import {ethers} from "ethers";
 import {useGlobalState} from "@/hooks/globalState";
 import RedeemBox from "@/components/redeemBox";
+import Notification from "@/components/notification";
 
 const TEXT_ROW1 = [
 	{
@@ -41,8 +42,6 @@ export default function Home() {
 
 	const router = useRouter();
 	const [tokenAmounts, setTokenAmounts] = useGlobalState('tokenAmounts');
-	// const [nitroAmount, setNitroAmount] = useState(0);
-	// const [tfuelAmount, setTFuelAmount] = useState(0);
 
 	// Use useEffect to handle the asynchronous operation
 	useEffect(() => {

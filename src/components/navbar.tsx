@@ -47,10 +47,10 @@ export default function Navbar() {
                             <a className={`nav-link ${currentRoute == '/nft' ? styles.highlightSelected : styles.highlight}`} onClick={() => handleClick('nft')}>NFTs</a>
                         </li>
                         <li className="nav-item">
-                            <a className={`nav-link ${currentRoute == '/referral' ? styles.highlightSelected : styles.highlight}`}  onClick={() => handleClick('referral')}>Referral-Program</a>
+                            <a className={`nav-link ${currentRoute == '/referral' ? styles.highlightSelected : styles.highlight}`}  onClick={() => handleClick('referral')}>ReferralProgram</a>
                         </li>
                         <li className="nav-item">
-                            <a className={`nav-link ${currentRoute == '/whitepaper' ? styles.highlightSelected : styles.highlight}`} onClick={() => handleClick('whitepaper')}>White-Paper</a>
+                            <a className={`nav-link ${currentRoute == '/whitepaper' ? styles.highlightSelected : styles.highlight}`} onClick={() => handleClick('whitepaper')}>WhitePaper</a>
                         </li>
                     </ul>
                     <div

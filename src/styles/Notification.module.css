@@ -1,0 +1,38 @@
+/* Assuming these styles are defined in `Navbar.module.css` based on your import */
+.outerContainer {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+    height: 50px;
+    transform: translateX(110%); /* Initially off-screen */
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+.outerContainer.active {
+    transform: translateX(0); /* Slide into view */
+}
+
+.notification {
+    padding: 10px 20px; /* Padding around text */
+}
+
+.statusLine {
+    width: 5px;
+    height: 50px;
+    border-radius: 0 10px 10px 0;
+}
+
+
+
+.success {
+    background-color: green; /* Adjust this if it should be just a border */
+}
+
+.error {
+    background-color: red; /* Adjust this if it should be just a border */
+}

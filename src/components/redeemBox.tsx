@@ -22,7 +22,15 @@ export default function RedeemBox() {
     const [inputValue, setInputValue] = useState<number | ''>('');
     const [isActiveTime, setIsActiveTime] = useGlobalState('isActiveTime');
     const [isApproved, setIsApproved] = useState<boolean>(false);
-    let isActiveRequestCounter = 0;
+    const [showNotification, setShowNotification] = useGlobalState('notification')
+
+    const togglePopup = (message: string, success: boolean) => {
+        setShowNotification({show: true, message:message, isSuccess: success});
+        // Automatically hide the popup after 3 seconds
+        setTimeout(() => {
+            setShowNotification({show: false, message: message, isSuccess: success});
+        }, 3000);
+    };
 
     // Use useEffect to handle the asynchronous operation
     useEffect(() => {
@@ -92,7 +100,9 @@ export default function RedeemBox() {
             setLoading(true)
             const ethersProvider = new BrowserProvider(walletProvider)
             const res = await blockchainInteraction.redeem(inputValue, ethersProvider)
+            togglePopup(res ? 'NITRO Redeemed' : 'Error Redeeming', res)
             setLoading(false)
+            setInputValue('')
             setIsApproved(false)
             if(res) {
                 const nitro = parseFloat(ethers.formatEther(await blockchainInteraction.getNitroTotalSupply()));
@@ -100,14 +110,14 @@ export default function RedeemBox() {
                 setTokenAmounts({nitro, tfuel});
             }
         }
-
     }
 
     const approve = async () => {
         if(address && walletProvider &&  inputValue && inputValue > 0) {
             setLoading(true)
             const ethersProvider = new BrowserProvider(walletProvider)
-            const res = await blockchainInteraction.approveNitro(inputValue, ethersProvider)
+            const res = await blockchainInteraction.approveNitro(inputValue, ethersProvider);
+            togglePopup(res ? 'NITRO Approved' : 'Error Approving', res);
             setIsApproved(res)
             setLoading(false)
         }

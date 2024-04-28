@@ -3,6 +3,8 @@ import { createWeb3Modal, defaultConfig } from "@web3modal/ethers/react";
 import type { AppProps } from "next/app";
 import { useEffect, useState } from "react";
 import Head from "next/head";
+import Notification from "@/components/notification";
+import {useGlobalState} from "@/hooks/globalState";
 
 const theta = {
 	id: 361,
@@ -91,6 +93,8 @@ createWeb3Modal({
 
 export default function App({ Component, pageProps }: AppProps) {
 	const [ready, setReady] = useState(false);
+	const [showNotification, setShowNotification] = useGlobalState('notification')
+
 
 	useEffect(() => {
 		setReady(true);
@@ -118,6 +122,7 @@ export default function App({ Component, pageProps }: AppProps) {
 						<link rel="icon" sizes="32x32" href="../../public/favicon/favicon-32x32.png"/>
 						<link rel="apple-touch-icon" sizes="180x180" href="../../public/favicon/apple-touch-icon.png"/>
 					</Head>
+					{showNotification.show && <Notification/>}
 					<Component {...pageProps} />
 				</>
 				// </WagmiConfig>

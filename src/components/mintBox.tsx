@@ -21,6 +21,15 @@ export default function MintBox() {
     const [fee, setFee] = useState(0)
     const [isLoading, setLoading] = useState(false);
     const [inputValue, setInputValue] = useState<number | ''>('');
+    const [showNotification, setShowNotification] = useGlobalState('notification')
+
+    const togglePopup = (message: string, success: boolean) => {
+        setShowNotification({show: true, message:message, isSuccess: success});
+        // Automatically hide the popup after 3 seconds
+        setTimeout(() => {
+            setShowNotification({show: false, message: message, isSuccess: success});
+        }, 3000);
+    };
 
     // Get the referral ID from the URL query parameters
     const referralId = router.query.referralId as string;
@@ -87,6 +96,8 @@ export default function MintBox() {
             } else {
                 res = await blockchainInteraction.mint(inputValue, ethersProvider)
             }
+            togglePopup(res ? 'NITRO Minted' : 'Error Minting', res)
+            setInputValue('')
             setLoading(false)
             if(res) {
                 const nitro = parseFloat(ethers.formatEther(await blockchainInteraction.getNitroTotalSupply()));
