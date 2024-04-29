@@ -35,6 +35,18 @@
 	text-align: center;
 }
 
+/* This CSS targets screens larger than 768px, making the userBalance visible */
+.userBalance {
+	display: block; /* or 'flex' or 'inline-block', depending on your layout needs */
+}
+
+/* This CSS applies when the screen size is less than 768px */
+@media (max-width: 767px) {
+	.userBalance {
+		display: none!important; /* This will hide the userBalance container on smaller screens */
+	}
+}
+
 .statsTitle {
 	color: #fff;
 	text-align: center;

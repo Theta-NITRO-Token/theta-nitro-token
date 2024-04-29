@@ -15,9 +15,9 @@ export default function RedeemBox() {
     const { walletProvider } = useWeb3ModalProvider()
     const { switchNetwork } = useSwitchNetwork()
 
-    const [tokenAmounts, setTokenAmounts] = useGlobalState('tokenAmounts')
-    const [userBalance, setUserBalance] = useState(0)
-    const [fee, setFee] = useState(0)
+    const [tokenAmounts, setTokenAmounts] = useGlobalState('tokenAmounts');
+    const [userBalance, setUserBalance] = useGlobalState('userNitroBalance');
+    const [fee, setFee] = useState(0);
     const [isLoading, setLoading] = useState(false);
     const [inputValue, setInputValue] = useState<number | ''>('');
     const [isActiveTime, setIsActiveTime] = useGlobalState('isActiveTime');
@@ -108,6 +108,8 @@ export default function RedeemBox() {
                 const nitro = parseFloat(ethers.formatEther(await blockchainInteraction.getNitroTotalSupply()));
                 const tfuel = parseFloat(ethers.formatEther(await blockchainInteraction.getTFuelBackingAmount()));
                 setTokenAmounts({nitro, tfuel});
+                const balance =  parseFloat(ethers.formatEther(await blockchainInteraction.getNitroBalance(address)));
+                setUserBalance(balance)
             }
         }
     }

@@ -17,11 +17,12 @@ export default function MintBox() {
 
     const [tokenAmounts, setTokenAmounts] = useGlobalState('tokenAmounts')
     const [isActiveTime, setIsActiveTime] = useGlobalState('isActiveTime');
-    const [userBalance, setUserBalance] = useState(0)
+    const [userBalance, setUserBalance] =  useState(0);
     const [fee, setFee] = useState(0)
     const [isLoading, setLoading] = useState(false);
     const [inputValue, setInputValue] = useState<number | ''>('');
     const [showNotification, setShowNotification] = useGlobalState('notification')
+    const [userNitroBalance, setUserNitroBalance] = useGlobalState('userNitroBalance');
 
     const togglePopup = (message: string, success: boolean) => {
         setShowNotification({show: true, message:message, isSuccess: success});
@@ -48,7 +49,6 @@ export default function MintBox() {
                 setIsActiveTime(resIsActiveTime)
                 const fee = parseFloat(await blockchainInteraction.getMintingFee())/100;
                 setFee(fee);
-                console.log(address)
             } catch (error) {
                 console.error("Failed to fetch fee and isActive", error);
                 // Optionally handle errors, e.g., by setting an error state
@@ -103,6 +103,10 @@ export default function MintBox() {
                 const nitro = parseFloat(ethers.formatEther(await blockchainInteraction.getNitroTotalSupply()));
                 const tfuel = parseFloat(ethers.formatEther(await blockchainInteraction.getTFuelBackingAmount()));
                 setTokenAmounts({nitro, tfuel});
+                const nitroBalance = parseFloat(ethers.formatEther(await blockchainInteraction.getNitroBalance(address)));
+                setUserNitroBalance(nitroBalance)
+                const balance =  parseFloat(ethers.formatEther(await blockchainInteraction.getBalance(address)));
+                setUserBalance(balance)
             }
         }
     }

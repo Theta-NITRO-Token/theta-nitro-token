@@ -11,6 +11,7 @@ import {ethers} from "ethers";
 import {useGlobalState} from "@/hooks/globalState";
 import RedeemBox from "@/components/redeemBox";
 import Notification from "@/components/notification";
+import {useWeb3ModalAccount} from '@web3modal/ethers/react';
 
 const TEXT_ROW1 = [
 	{
@@ -42,6 +43,8 @@ export default function Home() {
 
 	const router = useRouter();
 	const [tokenAmounts, setTokenAmounts] = useGlobalState('tokenAmounts');
+	const [userBalance, setUserBalance] = useGlobalState('userNitroBalance');
+	const { address, chainId, isConnected } = useWeb3ModalAccount()
 
 	// Use useEffect to handle the asynchronous operation
 	useEffect(() => {
@@ -60,6 +63,21 @@ export default function Home() {
 
 		fetchAmounts();
 	}, []);
+
+	useEffect(() => {
+		const fetchBalance = async () => {
+			try {
+				if(address) {
+					const balance = parseFloat(ethers.formatEther(await blockchainInteraction.getNitroBalance(address)));
+					setUserBalance(balance);
+				}
+			} catch (error) {
+				console.error("Failed to fetch nitro User balance", error);
+				// Optionally handle errors, e.g., by setting an error state
+			}
+		};
+		fetchBalance()
+	}, [address]);
 
 	const handleClick = (route: string) => {
 		// Navigate to the about page
@@ -80,13 +98,27 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
+					<div className={`${styles.userBalance} container`}>
+						<div className="row">
+							<div className="col-md-12">
+								<h4 className={styles.statsTitle}>Your Balance</h4>
+								<div className={styles.statsValue}>
+									<h1>{userBalance.toFixed(2)}</h1>
+									<Image src="/nitro_token_background.png" alt="NITRO Token"
+										   className={styles.tokenImage}
+										   width={30} height={30}/>
+								</div>
+							</div>
+						</div>
+					</div>
 					<div className="container">
 						<div className="row">
 							<div className="col-md-6">
 								<h4 className={styles.statsTitle}>Current Nitro Supply</h4>
 								<div className={styles.statsValue}>
 									<h1>{tokenAmounts.nitro.toFixed(2)}</h1>
-									<Image src="/nitro_token_background.png" alt="NITRO Token" className={styles.tokenImage}
+									<Image src="/nitro_token_background.png" alt="NITRO Token"
+										   className={styles.tokenImage}
 										   width={30} height={30}/>
 								</div>
 							</div>
@@ -105,7 +137,8 @@ export default function Home() {
 							<div className="col-md-12">
 								<div className={styles.statsValue}>
 									<h1>1</h1>
-									<Image src="/nitro_token_background.png" alt="NITRO Token" className={styles.tokenImageLarge}
+									<Image src="/nitro_token_background.png" alt="NITRO Token"
+										   className={styles.tokenImageLarge}
 										   width={35} height={35}/>
 									<h1>= {tokenAmounts.nitro != 0 ? (tokenAmounts.tfuel / tokenAmounts.nitro).toFixed(2) : 0}</h1>
 									<Image src="tfuel_token.svg" alt="TFuel Token" className={styles.tokenImageLarge}
@@ -133,7 +166,7 @@ export default function Home() {
 					<div className={styles.textBoxContainer}>
 						<div className="container">
 							<div className="row">
-								<div
+							<div
 									className="col-md-12 d-flex justify-content-center align-items-center align-content-center">
 									<button className={`${styles.button} btn btn-primary`} type="button" onClick={() => window.open('https://swap.thetatoken.org/swap', '_blank')}>Go To ThetaSwap</button>
 								</div>

@@ -21,12 +21,14 @@ interface GlobalState {
     tokenAmounts: TokenAmountState;
     isActiveTime: ActiveTimeState;
     notification: NotificationState;
+    userNitroBalance: number;
 }
 
 const { useGlobalState, setGlobalState, getGlobalState } = createGlobalState<GlobalState>({
     tokenAmounts: {nitro:0,tfuel:0},
     isActiveTime: {isActive: false, time: 0},
-    notification: {show: false, message:'', isSuccess: false}
+    notification: {show: false, message:'', isSuccess: false},
+    userNitroBalance: 0,
 });
 
 
