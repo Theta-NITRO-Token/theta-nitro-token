@@ -133,7 +133,7 @@ export default function MintBox() {
             <div className={styles.textBoxContainer}>
                 <h1 style={{textAlign: 'center', color: '#8e24aa', marginTop: '20px'}}>MINT NITRO</h1>
                 {isActiveTime.isActive || !isConnected ? <h6 className={styles.infoText}>Mint
-                    Day {isActiveTime.isActive ? 'starts' : 'ends'} in {formatTime(isActiveTime.time)}</h6> : ''}
+                    Day {isActiveTime.isActive ? 'ends' : 'starts'} in {formatTime(isActiveTime.time)}</h6> : ''}
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 d-flex justify-content-center align-items-center">
