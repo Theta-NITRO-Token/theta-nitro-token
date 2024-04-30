@@ -7,6 +7,7 @@ import React, {useEffect, useState} from "react";
 import contractInteractions from "@/hooks/contractInteractions";
 import LoadingIndicator from "@/components/loadingIndicator";
 import {BrowserProvider, ethers} from "ethers";
+import {useGlobalState} from "@/hooks/globalState";
 
 const ReferralPage = () => {
     const { address, chainId, isConnected } = useWeb3ModalAccount();
@@ -16,6 +17,8 @@ const ReferralPage = () => {
     const [currentReferralAddress, setCurrentReferralAddress] = useState('0x0000000000000000000000000000000000000000');
     const [isLoading, setLoading] = useState(false);
     const [referralAddress, setReferralAddress] = useState('');
+    const [showNotification, setShowNotification] = useGlobalState('notification')
+
 
     useEffect(() => {
         const getUserTokens = async () => {
@@ -35,6 +38,14 @@ const ReferralPage = () => {
             getUserTokens()
         }
     }, [address])
+
+    const togglePopup = (message: string, success: boolean) => {
+        setShowNotification({show: true, message:message, isSuccess: success});
+        // Automatically hide the popup after 3 seconds
+        setTimeout(() => {
+            setShowNotification({show: false, message: message, isSuccess: success});
+        }, 3000);
+    };
 
     const handleOnChange = async (event: React.ChangeEvent<HTMLSelectElement>) => {
         const values = Array.from(event.target.selectedOptions, (option) => option.value);
@@ -57,9 +68,10 @@ const ReferralPage = () => {
         setLoading(true)
         if(ethers.isAddress(referralAddress) && selectedToken && walletProvider) {
             const ethersProvider = new BrowserProvider(walletProvider)
-            await contractInteractions.setReferralAddress(selectedToken,referralAddress,ethersProvider);
+            let res = await contractInteractions.setReferralAddress(selectedToken,referralAddress,ethersProvider);
             const ra = await contractInteractions.getReferralAddress(selectedToken);
             setCurrentReferralAddress(ra)
+            togglePopup(res ? 'Success Setting Referral Address' : 'Error Setting Referral Address', res)
         }
         setLoading(false)
     };

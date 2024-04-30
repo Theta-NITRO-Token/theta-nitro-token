@@ -9,6 +9,7 @@ import {useWeb3ModalAccount, useWeb3ModalProvider} from '@web3modal/ethers/react
 import LoadingIndicator from "@/components/loadingIndicator";
 import {BrowserProvider, ethers} from "ethers";
 import blockchainInteraction from "@/hooks/contractInteractions";
+import {useGlobalState} from "@/hooks/globalState";
 
 const NFTPage = () => {
     const { address, chainId, isConnected } = useWeb3ModalAccount();
@@ -17,6 +18,7 @@ const NFTPage = () => {
     const [selectedTokens, setSelectedTokens] = useState<string[]>([]);
     const [isLoading, setLoading] = useState(false);
     const [isApproved, setIsApproved] = useState<boolean>(false);
+    const [showNotification, setShowNotification] = useGlobalState('notification');
 
 
     useEffect(() => {
@@ -31,7 +33,15 @@ const NFTPage = () => {
         if(address) {
             getUserTokens()
         }
-    }, [address])
+    }, [address]);
+
+    const togglePopup = (message: string, success: boolean) => {
+        setShowNotification({show: true, message:message, isSuccess: success});
+        // Automatically hide the popup after 3 seconds
+        setTimeout(() => {
+            setShowNotification({show: false, message: message, isSuccess: success});
+        }, 3000);
+    };
 
     const handleOptionClick = (token: string) => {
         if(selectedTokens.length <50) {
@@ -54,6 +64,7 @@ const NFTPage = () => {
                 let tokenIds : number[] = await contractInteractions.getUserNitroNFTs(address, 'redeem')
                 setUserTokens(tokenIds)
             }
+            togglePopup(res ? 'NFTs Redeemed' : 'Error Redeeming', res)
             setLoading(false)
         }
     }
@@ -64,6 +75,7 @@ const NFTPage = () => {
             const ethersProvider = new BrowserProvider(walletProvider)
             const res = await blockchainInteraction.approveNFTs(selectedTokens, ethersProvider)
             setIsApproved(res)
+            togglePopup(res ? 'NFTs Approved' : 'Error Approving', res)
             setLoading(false)
         }
     }

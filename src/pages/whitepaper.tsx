@@ -37,8 +37,8 @@ const WhitepaperPage = () => {
             <h1 className={styles.title}>
                 White Paper</h1>
             <div className={`d-flex justify-content-center ${styles.buttonContainer}`}>
-                <button className={`btn btn-primary ${styles.button}`} type="button">
-                    Download
+                <button className={`btn btn-primary ${styles.button}`} type="button" onClick={() => window.open('https://github.com/Theta-NITRO-Token/theta-nitro-token/blob/master/WhitePaper.md', '_blank')}>
+                    Read White Paper
                 </button>
             </div>
             <div className={styles.container}>
