@@ -298,7 +298,7 @@ With the Nitro token smart contract on the Theta blockchain, we are using a self
 3. Launch Meme token contract
    - Allow NFT holders to redeem their NFTs for Theta Nitro Tokens
    - Create liquidity pool to facilitate smoother transactions and price stability
-4. New buy in with fee follwoing the fee structure shown above
+4. New buy-in with the fee structure shown above
 5. Launch Meme token contract V2 with TFuel Staking to provide additional earning mechanisms and increase network participation
 
 
