@@ -291,12 +291,15 @@ With the Nitro token smart contract on the Theta blockchain, we are using a self
 6. Enhanced Earnings through TFuel Staking: In the future evolution of the Nitro Token ecosystem, the introduction of a new version of the meme token contract (V2) featuring TFuel staking would allow users to earn passive income. By staking their TFuel in the Nitro V2 contract, users can secure additional earnings derived from the overall network activities and transaction fees. This staking mechanism not only incentivizes holding the tokens longer but also contributes to the stability and security of the network by locking in resources.
 
 ## 6. Roadmap
-1. NFT Drop: 1000 NFTs for 500 TFuel each
-2. Launch Meme token contract
-    1. NFT to Meme token redeem
-    2. Create liquidity pool
-3. New buy in with fee (Weekly, Monthly, Random?)
-4. Launch Meme token contract V2 with TFuel Staking
+1. Smart Contract Audit
+   - Ensure security and transparency through a comprehensive audit of the smart contract
+3. NFT Drop
+   - Release of 1000 NFTs, priced at 500 TFuel each
+3. Launch Meme token contract
+   - Allow NFT holders to redeem their NFTs for Theta Nitro Tokens
+   - Create liquidity pool to facilitate smoother transactions and price stability
+4. New buy in with fee follwoing the fee structure shown above
+5. Launch Meme token contract V2 with TFuel Staking to provide additional earning mechanisms and increase network participation
 
 
 ## 7. Team
