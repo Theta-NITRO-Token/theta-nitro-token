@@ -2,6 +2,8 @@
 ***
 **Website: https://nitro.meme**
 
+**Audit: [NITRO TNT20 Token Audit](https://github.com/TechRate/Smart-Contract-Audits/blob/main/Май_2024/ThetaNitroToken.pdf)**
+
 **Contract Theta NITRO Token:**
 
 **Contract Nitro NFT:**
@@ -270,11 +272,34 @@ In the following table you can see on which days the contracts allows you to min
 </table>
 
 
-To continue in the same rhythm, the mint is closed after every 30 days and opened for one day.
+To continue in the same rhythm, the mint is opened for one day after every 30 days.
+
+### 3.1 Referral NFT
+
+To further incentivize the promotion of the Nitro token, we added a referral option to the minting process. The referral NFTs will be airdropped to the Nitro NFT holders before the TNT20 token launch. For every 20 Nitro NFTs a wallet holds, they will receive one referral NFT airdropped.
+In total, there will be 100 Referral NFTs. The NFTs that are not airdropped will be kept by the founding team for giveaways, gifting to influencers, or selling on the secondary market.
+Similar to the Nitro NFTs, there is also a 7% creator fee on the OpenTheta marketplace for the Referral NFT. This fee will go into the Nitro Token smart contract and increase the TFuel backing.
+
+The referral can be set up by the wallet that currently holds the NFT on the Nitro website. For that, you can specify whichever wallet address you want to receive your referral bonus.
+After setting up the referral, share the referral link with your friends and community. If they mint through that link, the referrer gets 20% of the fee paid by the minter.
+Example:
+
+- First Mint Day: Fee = 1% -> Referrer would get 0.2%
+- Fifteenth Mint Day: Fee = 5% -> Referrer would get 1%
+
+As the referral reward is only applied to the fee the minter is paying, the backed TFuel can still only increase!
 
 ## 4. Technology and Architecture
 
-With the Nitro token smart contract on the Theta blockchain, we are using a self-executing digital contract that automatically enforces and executes the terms and conditions defined in its code. This contract is powered by Theta blockchain technology, ensuring transparency, security, and immutability. In addition, the Nitro NFTs on the Theta blockchain represent unique digital assets that are used to verify ownership for the no-fee Nitro Token distribution and for the redistribution of applicable fees to the holders.
+With the Nitro token smart contract on the Theta blockchain, we are using a self-executing digital contract that automatically enforces and executes the terms and conditions defined in its code. 
+This contract is powered by Theta blockchain technology, ensuring transparency, security, and immutability. 
+In addition, the Nitro NFTs on the Theta blockchain represent unique digital assets that are used to verify ownership for the no-fee Nitro Token distribution and for the redistribution of applicable fees to the holders.
+
+## 5. Team and Admin control
+
+For complete transparency we are listing here the functions that only the Nitro Team has access to in the smart contract:
+1. setTransactionFeeBasisPoints: we can set the fee between 0% and 5%. Intended is 2% this regulates the Transaction fee and the redeeming fee (if not on Mint Day)
+2. setWhitelistedWallet: If a wallet is whitelisted sending Nitro to that wallet will not have any fee applied. Intended use is so we can add liquidity to ThetaSwap without loosing Nitro Tokens
 
 
 ## 5. Use Cases
@@ -293,13 +318,14 @@ With the Nitro token smart contract on the Theta blockchain, we are using a self
 ## 6. Roadmap
 1. Smart Contract Audit
    - Ensure security and transparency through a comprehensive audit of the smart contract
-3. NFT Drop
+2. NFT Drop
    - Release of 1000 NFTs, priced at 500 TFuel each
+   - Airdrop Referral NFTs
 3. Launch Meme token contract
    - Allow NFT holders to redeem their NFTs for Theta Nitro Tokens
    - Create liquidity pool to facilitate smoother transactions and price stability
 4. New buy-in with the fee structure shown above
-5. Launch Meme token contract V2 with TFuel Staking to provide additional earning mechanisms and increase network participation
+5. Launch Nitro token contract V2 with TFuel Staking to provide additional earning mechanisms and increase network participation
 
 
 ## 7. Team
@@ -330,4 +356,9 @@ Both are also closely linked through the organization of the first European Thet
 **Strong and reliable Team:** The team has exceptional expertise and leadership in blockchain technology, software development and product management, making them a highly experienced and respected team in their particular fields.
 
 
-
+## 9. Legal Considerations
+The content presented in this White-Paper is for informational purposes only and is neither exhaustive nor definitive. 
+It is important to note that nothing in this document should be construed as establishing, or intended to establish, any form of contractual relationship. 
+The primary objective of this White Paper is to equip potential users with relevant information to facilitate a comprehensive understanding and assessment of the project. 
+Readers are encouraged to make informed decisions based on their analysis of the information provided herein. 
+The Team assumes no responsibility for the fulfillment or execution of any plans, strategies, or details mentioned in this document, as they are subject to change based on evolving needs and market dynamics.
