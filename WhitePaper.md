@@ -270,8 +270,7 @@ In the following table you can see on which days the contracts allows you to min
 </table>
 
 
-To continue in the same rithm, every after 30 Days of minting being closed, it opens up for one day.
-
+To continue in the same rhythm, the mint is closed after every 30 days and opened for one day.
 
 ## 4. Technology and Architecture
 
@@ -279,7 +278,15 @@ With the Nitro token smart contract on the Theta blockchain, we are using a self
 
 
 ## 5. Use Cases
+1. Secure Investment Vehicle for Crypto investors who prioritize security and stable growth over speculative gains: Investors looking for a stable, secure digital asset can use the Nitro Token as a safe investment option. With its backing by TFuel, and an audited smart contract, Nitro Token offers a dependable store of value. Investors can redeem their tokens for the backed TFuel amount at any time, providing a fallback option in case they decide to liquidate their holdings. 
 
+2. Community Engagement through NFT to foster community engagement and inclusivity within the Theta ecosystem: Ownership of these NFTs not only grants users a certain amount of Nitro Token but also enhances their participation and involvement without entry fees. This creates a vibrant community around the project, driven by tangible benefits and shared interests.
+
+3. Rewarding Early Adopters: Early-stage investors of Nitro Token benefit from lower fees and potentially higher rewards as the value of Nitro Token appreciates due to the fee structure and decreasing supply. This incentivizes early participation and investment in the token, creating a loyal user base that benefits from long-term value retention and growth.
+
+4. Fee Generation Mechanism for Continuous Growth through a transaction fee model where a 2% fee is charged on transfers and trades. This fee is burned, effectively reducing the supply of Nitro Token and increasing the value of remaining tokens. This mechanism supports sustainable economic growth of the token by aligning the interests of long-term holders with the tokenomics of Nitro.
+
+5. Enhanced Transparency and Trust: The straightforward method for calculating Nitro Token’s value enhances transparency, making it easy for users to understand the worth of their investments at any point. Combined with the published and audited token contract, this builds trust among investors and users who seek clarity and security in their crypto transactions.
 
 ## 6. Roadmap
 1. NFT Drop: 1000 NFTs for 500 TFuel each
