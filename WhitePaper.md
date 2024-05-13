@@ -288,6 +288,8 @@ With the Nitro token smart contract on the Theta blockchain, we are using a self
 
 5. Enhanced Transparency and Trust: The straightforward method for calculating Nitro Token’s value enhances transparency, making it easy for users to understand the worth of their investments at any point. Combined with the published and audited token contract, this builds trust among investors and users who seek clarity and security in their crypto transactions.
 
+6. Enhanced Earnings through TFuel Staking: In the future evolution of the Nitro Token ecosystem, the introduction of a new version of the meme token contract (V2) featuring TFuel staking would allow users to earn passive income. By staking their TFuel in the Nitro V2 contract, users can secure additional earnings derived from the overall network activities and transaction fees. This staking mechanism not only incentivizes holding the tokens longer but also contributes to the stability and security of the network by locking in resources.
+
 ## 6. Roadmap
 1. NFT Drop: 1000 NFTs for 500 TFuel each
 2. Launch Meme token contract
@@ -314,7 +316,7 @@ Both are also closely linked through the organization of the first European Thet
 
 **Stable Growth**: Theta Nitro Token offers a unique opportunity for investors by ensuring stable and reliable returns over time.
 
-**Early Investor Advantage**: Unidirectional TFuel backing minimizes risk, ensuring early investors profit most, and giving them a smug "I told you so" look.
+**Early Investor Advantage**: Unidirectional TFuel backing minimizes risk, ensuring early investors profit most.
 
 **Effortless Redemption**: Instantly redeem Theta Nitro Tokens for TFuel at any time and make cashing out as easy as pie.
 
@@ -325,4 +327,4 @@ Both are also closely linked through the organization of the first European Thet
 **Strong and reliable Team:** The team has exceptional expertise and leadership in blockchain technology, software development and product management, making them a highly experienced and respected team in their particular fields.
 
 
-## 9. References
+
