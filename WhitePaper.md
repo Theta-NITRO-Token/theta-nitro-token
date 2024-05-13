@@ -15,7 +15,7 @@ The first Theta meme token that actually has a value and is constantly growing i
 
 What will give investors the security to trust in the token? Trust is a key element which is why our token contract is audited and published. Theta Nitro Token prioritizes transparency and security, guaranteeing that the TFuel backing is secure and inaccessible. Only by burning Nitro you get the corresponding TFuel paid out.
 
-Through Theta Nitro NFTs, the project fosters community engagement and inclusivity, providing an accessible entry point for users through OpenTheta, enhancing participation and involvement.
+Through Theta Non-Fungible Tokens (NFTs), the project fosters community engagement and inclusivity, providing an accessible entry point for users through OpenTheta, enhancing participation and involvement.
 
 A simple method for calculating the TFuel-backed value per Theta Nitro Token increases transparency and makes it easy to understand (TFuel in the Contract / Total Circulating Supply of Nitro).
 
@@ -47,7 +47,7 @@ Summary of the Nitro value generation:
 3. Late buy in fee 1%-5% (Add)
 4. Tfuel Staking from Contract (Added with Meme token V2)
 
-In the following table you can see on which days the contracts allows you to mint new tokens and what the fee is. On the same days you can redeem your Nitro for TFuel with a 0% fee. on every other day redeeming is still possible but a 2% Fee will be deducted.
+In the following table you can see on which days the contracts allows you to mint new tokens and what the fee is. On the same days you can redeem your Nitro for TFuel with a 0% fee. On every other day redeeming is still possible but a 2% Fee will be deducted.
 
 
 <table>
@@ -274,13 +274,13 @@ To continue in the same rhythm, the mint is closed after every 30 days and opene
 
 ## 4. Technology and Architecture
 
-With the Nitro token smart contract on the Theta blockchain, we are using a self-executing digital contract that automatically enforces and executes the terms and conditions defined in its code. This contract is powered by Theta blockchain technology, ensuring transparency, security, and immutability. In addition, the Nitro Non-Fungible Tokens (NFTs) on the Theta blockchain represent unique digital assets that are used to verify ownership for the no-fee Nitro Token distribution and for the redistribution of applicable fees to the holders.
+With the Nitro token smart contract on the Theta blockchain, we are using a self-executing digital contract that automatically enforces and executes the terms and conditions defined in its code. This contract is powered by Theta blockchain technology, ensuring transparency, security, and immutability. In addition, the Nitro NFTs on the Theta blockchain represent unique digital assets that are used to verify ownership for the no-fee Nitro Token distribution and for the redistribution of applicable fees to the holders.
 
 
 ## 5. Use Cases
-1. Secure Investment Vehicle for Crypto investors who prioritize security and stable growth over speculative gains: Investors looking for a stable, secure digital asset can use the Nitro Token as a safe investment option. With its backing by TFuel, and an audited smart contract, Nitro Token offers a dependable store of value. Investors can redeem their tokens for the backed TFuel amount at any time, providing a fallback option in case they decide to liquidate their holdings. 
+1. Secure Investment Vehicle for investors who prioritize security and stable growth over speculative gains: Investors looking for a stable, secure digital asset can use the Nitro Token as a safe investment option. With its backing by TFuel, and an audited smart contract, Nitro Token offers a dependable store of value. Investors can redeem their tokens for the backed TFuel amount at any time, providing a fallback option in case they decide to liquidate their holdings. 
 
-2. Community Engagement through NFT to foster community engagement and inclusivity within the Theta ecosystem: Ownership of these NFTs not only grants users a certain amount of Nitro Token but also enhances their participation and involvement without entry fees. This creates a vibrant community around the project, driven by tangible benefits and shared interests.
+2. Community Engagement through NFTs to foster community engagement and inclusivity within the Theta ecosystem: Ownership of these NFTs not only grants users a certain amount of Nitro Token but also enhances their participation and involvement without entry fees. This creates a vibrant community around the project, driven by tangible benefits and shared interests.
 
 3. Rewarding Early Adopters: Early-stage investors of Nitro Token benefit from lower fees and potentially higher rewards as the value of Nitro Token appreciates due to the fee structure and decreasing supply. This incentivizes early participation and investment in the token, creating a loyal user base that benefits from long-term value retention and growth.
 
