@@ -34,6 +34,22 @@ In addition, the lack of transparency and verifiability of token contracts raise
 The Nitro token represents a new kind of solution within the Theta network by introducing the first meme token with tangible value and continuous growth in TFuel.  \
 Backed by TFuel reserves, Nitro offers all users a secure way to redeem their tokens at any time at their current TFuel value.
 
+To optimize the tokenomics, the project consists of three different tokens: two NFT collections and one TNT20 token, the actual Nitro Token.
+1. **Nitro NFT (TNT721):** Initially launched for people to enter without paying a fee.
+   - **Max Amount:** 1000
+   - **Mint Price:** 500 TFuel
+   - **Can be redeemed for:** 5000 Nitro Tokens
+
+2. **Referral NFT (TNT721):** Airdropped for every 20 Nitro NFTs a person holds before the Nitro Token launch.
+   - **Max Amount:** 100
+   - **Distribution:** Airdrop
+   - **Benefit:** Enables referrers to earn 20% of the fee paid when minting new Nitro Tokens
+
+3. **Theta Nitro Token (TNT20):** Backed by TFuel.
+   - **Max Amount:** Limited by total TFuel supply
+   - **Mint Price:** At launch, 0.1 TFuel - Fee
+   - **Can be redeemed for:** Backed TFuel
+
 You may ask now how does the value of Nitro increase?
 
 Initially through buying the Nitro NFT you are eligible for 5000 Nitro tokens which are valued in 500 Tfuel (10:1 ratio at launch). By using the NFT you do not need to pay any fees. If more people want to join Nitro at a later stage, there will always be options to do that but then there will be a fee applied which gets redistributed to all Nitro holders. This fee increases over time and benefits early-stage investors.
