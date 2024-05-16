@@ -318,7 +318,7 @@ For complete transparency we are listing here the functions that only the Nitro 
 2. setWhitelistedWallet: If a wallet is whitelisted sending Nitro to that wallet will not have any fee applied. Intended use is so we can add liquidity to ThetaSwap without loosing Nitro Tokens
 
 
-## 5. Use Cases
+## 6. Use Cases
 1. Secure Investment Vehicle for investors who prioritize security and stable growth over speculative gains: Investors looking for a stable, secure digital asset can use the Nitro Token as a safe investment option. With its backing by TFuel, and an audited smart contract, Nitro Token offers a dependable store of value. Investors can redeem their tokens for the backed TFuel amount at any time, providing a fallback option in case they decide to liquidate their holdings. 
 
 2. Community Engagement through NFTs to foster community engagement and inclusivity within the Theta ecosystem: Ownership of these NFTs not only grants users a certain amount of Nitro Token but also enhances their participation and involvement without entry fees. This creates a vibrant community around the project, driven by tangible benefits and shared interests.
@@ -331,7 +331,7 @@ For complete transparency we are listing here the functions that only the Nitro 
 
 6. Enhanced Earnings through TFuel Staking: In the future evolution of the Nitro Token ecosystem, the introduction of a new version of the meme token contract (V2) featuring TFuel staking would allow users to earn passive income. By staking their TFuel in the Nitro V2 contract, users can secure additional earnings derived from the overall network activities and transaction fees. This staking mechanism not only incentivizes holding the tokens longer but also contributes to the stability and security of the network by locking in resources.
 
-## 6. Roadmap
+## 7. Roadmap
 1. Smart Contract Audit
    - Ensure security and transparency through a comprehensive audit of the smart contract
 2. NFT Drop
@@ -344,7 +344,7 @@ For complete transparency we are listing here the functions that only the Nitro 
 5. Launch Nitro token contract V2 with TFuel Staking to provide additional earning mechanisms and increase network participation
 
 
-## 7. Team
+## 8. Team
 
 Simon Piazolo is the founder and CEO of OpenTheta NFT marketplace, as well as the first Developer Advocate for Theta Labs. With a background in Electrical Engineering from RWTH University Aachen, Germany, he brings expertise in blockchain technology, highlighted by his thesis on the Hyperledger private blockchain. His leadership and technical excellence drive innovation and development within the Theta ecosystem.
 
@@ -353,7 +353,7 @@ Emre Eliguezel, an early Theta investor and experienced technology expert, holds
 Both are also closely linked through the organization of the first European Theta-Euro conference in Prague in July 2024.
 
 
-## 8. Conclusion
+## 9. Conclusion
 
 **Transparent Security**: With an audited and published token contract, Theta Nitro Token prioritizes transparency and security, guaranteeing that the TFuel backing is secure and inaccessible and keeping shady characters at bay.
 
@@ -372,7 +372,7 @@ Both are also closely linked through the organization of the first European Thet
 **Strong and reliable Team:** The team has exceptional expertise and leadership in blockchain technology, software development and product management, making them a highly experienced and respected team in their particular fields.
 
 
-## 9. Legal Considerations
+## 10. Legal Considerations
 The content presented in this White-Paper is for informational purposes only and is neither exhaustive nor definitive. 
 It is important to note that nothing in this document should be construed as establishing, or intended to establish, any form of contractual relationship. 
 The primary objective of this White Paper is to equip potential users with relevant information to facilitate a comprehensive understanding and assessment of the project. 
