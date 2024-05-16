@@ -40,8 +40,8 @@ To optimize the tokenomics, the project consists of three different tokens: two 
    - **Mint Price:** 500 TFuel
    - **Can be redeemed for:** 5000 Nitro Tokens
 
-2. **Referral NFT (TNT721):** Airdropped for every 20 Nitro NFTs a person holds before the Nitro Token launch.
-   - **Max Amount:** 100
+2. **Referral NFT (TNT721):** Airdropped for every 30 Nitro NFTs a person holds before the Nitro Token launch.
+   - **Max Amount:** 50
    - **Distribution:** Airdrop
    - **Benefit:** Enables referrers to earn 20% of the fee paid when minting new Nitro Tokens
 
@@ -292,8 +292,8 @@ To continue in the same rhythm, the mint is opened for one day after every 30 da
 
 ### 3.1 Referral NFT
 
-To further incentivize the promotion of the Nitro token, we added a referral option to the minting process. The referral NFTs will be airdropped to the Nitro NFT holders before the TNT20 token launch. For every 20 Nitro NFTs a wallet holds, they will receive one referral NFT airdropped.
-In total, there will be 100 Referral NFTs. The NFTs that are not airdropped will be kept by the founding team for giveaways, gifting to influencers, or selling on the secondary market.
+To further incentivize the promotion of the Nitro token, we added a referral option to the minting process. The referral NFTs will be airdropped to the Nitro NFT holders before the TNT20 token launch. For every 30 Nitro NFTs a wallet holds, they will receive one referral NFT airdropped.
+In total, there will be 50 Referral NFTs. The NFTs that are not airdropped will be kept by the founding team for giveaways, gifting to influencers, or selling on the secondary market.
 Similar to the Nitro NFTs, there is also a 7% creator fee on the OpenTheta marketplace for the Referral NFT. This fee will go into the Nitro Token smart contract and increase the TFuel backing.
 
 The referral can be set up by the wallet that currently holds the NFT on the Nitro website. For that, you can specify whichever wallet address you want to receive your referral bonus.
