@@ -260,7 +260,7 @@ Simon Piazolo is the founder and CEO of OpenTheta NFT marketplace, as well as th
 
 Emre Eliguezel, an early Theta investor and experienced technology expert, holds a Master's degree in International Business and Foreign Trade from the University of Applied Science in Worms, Germany. With a focus on developing innovative and scalable software solutions, he has an outstanding track record with strong leadership and IT skills in various roles and industries. Emre, currently serving as Senior Product Manager at Porsche AG, leverages his extensive expertise to build and develop software product portfolios tailored for web and native applications.
 
-Both are also closely linked through the organization of the first European Theta-Euro conference in Prague in July 2024.
+Both are also closely linked through the organization of the first European Theta-Euro conference in Prague in June 2024.
 
 
 ## 9. Conclusion
