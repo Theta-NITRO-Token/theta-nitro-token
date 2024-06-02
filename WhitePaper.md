@@ -6,9 +6,9 @@
 
 **Contract Theta NITRO Token:**
 
-**Contract Nitro NFT:**
+**Contract Nitro Redeemable NFT:** 0x0435f034c8e5f77f58548dce0ab8122bfd4530b7
 
-**Contract Referral NFT:**
+**Contract Referral NFT:** 
 ***
 
 ## 1. Introduction Theta Nitro Token (TNT)
@@ -70,220 +70,130 @@ In the following table you can see on which days the contracts allows you to min
 
 <table>
   <tr>
-   <td>Opening Period
-   </td>
-   <td>Date (dd/mm/yy)
-   </td>
-   <td>Minting Fee
-   </td>
-   <td>Redeeming Fee
-   </td>
-   <td>Waiting Days till next Mint Day
-   </td>
+    <th>Opening Period</th>
+    <th>Date (dd/mm/yyyy)</th>
+    <th>Minting Fee</th>
+    <th>Redeeming Fee</th>
+    <th>Waiting Days till Next Mint Day</th>
   </tr>
   <tr>
-   <td>1
-   </td>
-   <td>01.05.24
-   </td>
-   <td>1.0%
-   </td>
-   <td>0%
-   </td>
-   <td>2
-   </td>
+    <td>1</td>
+    <td>09/06/2024</td>
+    <td>1%</td>
+    <td>0%</td>
+    <td>2</td>
   </tr>
   <tr>
-   <td>2
-   </td>
-   <td>04.05.24
-   </td>
-   <td>1.3%
-   </td>
-   <td>0%
-   </td>
-   <td>4
-   </td>
+    <td>2</td>
+    <td>12/06/2024</td>
+    <td>1.3%</td>
+    <td>0%</td>
+    <td>4</td>
   </tr>
   <tr>
-   <td>3
-   </td>
-   <td>09.05.24
-   </td>
-   <td>1.6%
-   </td>
-   <td>0%
-   </td>
-   <td>6
-   </td>
+    <td>3</td>
+    <td>17/06/2024</td>
+    <td>1.6%</td>
+    <td>0%</td>
+    <td>6</td>
   </tr>
   <tr>
-   <td>4
-   </td>
-   <td>16.05.24
-   </td>
-   <td>1.9%
-   </td>
-   <td>0%
-   </td>
-   <td>8
-   </td>
+    <td>4</td>
+    <td>24/06/2024</td>
+    <td>1.9%</td>
+    <td>0%</td>
+    <td>8</td>
   </tr>
   <tr>
-   <td>5
-   </td>
-   <td>25.05.24
-   </td>
-   <td>2.2%
-   </td>
-   <td>0%
-   </td>
-   <td>10
-   </td>
+    <td>5</td>
+    <td>03/07/2024</td>
+    <td>2.2%</td>
+    <td>0%</td>
+    <td>10</td>
   </tr>
   <tr>
-   <td>6
-   </td>
-   <td>05.06.24
-   </td>
-   <td>2.5%
-   </td>
-   <td>0%
-   </td>
-   <td>12
-   </td>
+    <td>6</td>
+    <td>14/07/2024</td>
+    <td>2.5%</td>
+    <td>0%</td>
+    <td>12</td>
   </tr>
   <tr>
-   <td>7
-   </td>
-   <td>18.06.24
-   </td>
-   <td>2.8%
-   </td>
-   <td>0%
-   </td>
-   <td>14
-   </td>
+    <td>7</td>
+    <td>27/07/2024</td>
+    <td>2.8%</td>
+    <td>0%</td>
+    <td>14</td>
   </tr>
   <tr>
-   <td>8
-   </td>
-   <td>03.07.24
-   </td>
-   <td>3.1%
-   </td>
-   <td>0%
-   </td>
-   <td>16
-   </td>
+    <td>8</td>
+    <td>11/08/2024</td>
+    <td>3.1%</td>
+    <td>0%</td>
+    <td>16</td>
   </tr>
   <tr>
-   <td>9
-   </td>
-   <td>20.07.24
-   </td>
-   <td>3.4%
-   </td>
-   <td>0%
-   </td>
-   <td>18
-   </td>
+    <td>9</td>
+    <td>28/08/2024</td>
+    <td>3.4%</td>
+    <td>0%</td>
+    <td>18</td>
   </tr>
   <tr>
-   <td>10
-   </td>
-   <td>08.08.24
-   </td>
-   <td>3.7%
-   </td>
-   <td>0%
-   </td>
-   <td>20
-   </td>
+    <td>10</td>
+    <td>16/09/2024</td>
+    <td>3.7%</td>
+    <td>0%</td>
+    <td>20</td>
   </tr>
   <tr>
-   <td>11
-   </td>
-   <td>29.08.24
-   </td>
-   <td>4.0%
-   </td>
-   <td>0%
-   </td>
-   <td>22
-   </td>
+    <td>11</td>
+    <td>07/10/2024</td>
+    <td>4%</td>
+    <td>0%</td>
+    <td>22</td>
   </tr>
   <tr>
-   <td>12
-   </td>
-   <td>21.09.24
-   </td>
-   <td>4.3%
-   </td>
-   <td>0%
-   </td>
-   <td>24
-   </td>
+    <td>12</td>
+    <td>30/10/2024</td>
+    <td>4.3%</td>
+    <td>0%</td>
+    <td>24</td>
   </tr>
   <tr>
-   <td>13
-   </td>
-   <td>16.10.24
-   </td>
-   <td>4.6%
-   </td>
-   <td>0%
-   </td>
-   <td>26
-   </td>
+    <td>13</td>
+    <td>24/11/2024</td>
+    <td>4.6%</td>
+    <td>0%</td>
+    <td>26</td>
   </tr>
   <tr>
-   <td>14
-   </td>
-   <td>12.11.24
-   </td>
-   <td>4.9%
-   </td>
-   <td>0%
-   </td>
-   <td>28
-   </td>
+    <td>14</td>
+    <td>21/12/2024</td>
+    <td>4.9%</td>
+    <td>0%</td>
+    <td>28</td>
   </tr>
   <tr>
-   <td>15
-   </td>
-   <td>11.12.24
-   </td>
-   <td>5.0%
-   </td>
-   <td>0%
-   </td>
-   <td>30
-   </td>
+    <td>15</td>
+    <td>19/01/2025</td>
+    <td>5%</td>
+    <td>0%</td>
+    <td>30</td>
   </tr>
   <tr>
-   <td>16
-   </td>
-   <td>11.01.24
-   </td>
-   <td>5.0%
-   </td>
-   <td>0%
-   </td>
-   <td>30
-   </td>
+    <td>16</td>
+    <td>19/02/2025</td>
+    <td>5%</td>
+    <td>0%</td>
+    <td>30</td>
   </tr>
   <tr>
-   <td>17
-   </td>
-   <td>11.02.25
-   </td>
-   <td>5.0%
-   </td>
-   <td>0%
-   </td>
-   <td>30
-   </td>
+    <td>17</td>
+    <td>22/03/2025</td>
+    <td>5%</td>
+    <td>0%</td>
+    <td>30</td>
   </tr>
 </table>
 

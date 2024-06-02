@@ -9,7 +9,7 @@ import "@openzeppelin/contracts@5.0.2/access/Ownable.sol";
 
 contract NitroReferralNFT is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable {
 
-    uint private MAX_NFT_SUPPLY = 100;
+    uint private MAX_NFT_SUPPLY = 50;
     string public BASEURI;
     constructor(string memory baseURI) ERC721("Nitro Referral", "TNT-Ref") Ownable(msg.sender) {
         BASEURI = baseURI;

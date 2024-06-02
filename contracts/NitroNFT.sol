@@ -8,16 +8,16 @@ import "@openzeppelin/contracts@5.0.2/token/ERC721/extensions/ERC721URIStorage.s
 import "@openzeppelin/contracts@5.0.2/token/ERC721/extensions/ERC721Burnable.sol";
 import "@openzeppelin/contracts@5.0.2/access/Ownable.sol";
 
-contract NitroNFT is ERC721, ERC721Enumerable, ERC721URIStorage, ERC721Burnable, Ownable {
+contract NitroRedeemableNFT is ERC721, ERC721Enumerable, ERC721URIStorage, ERC721Burnable, Ownable {
 
     uint private MAX_NFT_SUPPLY = 1000;
-    uint public PRICE = 500000000000000000000;
+    uint public PRICE = 500 ether;
     address public ThetaNitroTokenAddress;
     string public BASEURI;
     bool public saleIsActive;
     uint public Minted = 0;
 
-    constructor(string memory baseURI) ERC721("NitroNFT", "TNT721") Ownable(msg.sender) {
+    constructor(string memory baseURI) ERC721("NitroRedeemableNFT", "TNT721") Ownable(msg.sender) {
         BASEURI = baseURI;
     }
 
