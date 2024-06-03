@@ -13,7 +13,7 @@
 
 ## 1. Introduction Theta Nitro Token (TNT)
 
-The first Theta meme token that actually has a value and is constantly growing in its TFuel value. Nitro is backed by TFuel and can always be redeemed to its current TFuel value at any time. The big advantage is that the TFuel amount which backs one Nitro Token can only increase and never decrease. Nitro aims for stable growth and offers a unique opportunity for investors by ensuring stable and reliable retention and a steady increase in value over time.
+The first Theta meme token that actually has a value and is constantly growing in its TFuel value. Nitro is backed by TFuel and can always be redeemed to its current TFuel value at any time. The big advantage is that the TFuel amount which backs one Nitro Token can only increase and never fall below the initial 1 TFuel : 10 Nitro ration. Nitro aims for stable growth and offers a unique opportunity for investors by ensuring stable and reliable retention and a steady increase in TFuel value over time.
 
 What will give investors the security to trust in the token? Trust is a key element which is why our token contract is audited and published. Theta Nitro Token prioritizes transparency and security, guaranteeing that the TFuel backing is secure and inaccessible. Only by burning Nitro you get the corresponding TFuel paid out.
 
@@ -32,7 +32,7 @@ In addition, the lack of transparency and verifiability of token contracts raise
 ## 3. Solution and Tokenomics
 
 The Nitro token represents a new kind of solution within the Theta network by introducing the first meme token with tangible value and continuous growth in TFuel.  \
-Backed by TFuel reserves, Nitro offers all users a secure way to redeem their tokens at any time at their current TFuel value.
+Backed by TFuel reserves, Nitro offers all users a secure way to redeem their tokens at any time at their current TFuel value (fees may apply).
 
 To optimize the tokenomics, the project consists of three different tokens: two NFT collections and one TNT20 token, the actual Nitro Token.
 1. **Nitro NFT (TNT721):** Initially launched for people to enter without paying a fee.
