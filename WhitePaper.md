@@ -8,7 +8,7 @@
 
 **Contract Nitro Redeemable NFT:** 0x0435f034c8e5f77f58548dce0ab8122bfd4530b7
 
-**Contract Referral NFT:** 
+**Contract Referral NFT:** 0x5eca41b572b1eb32b3917fff69b5025ea1876be7
 ***
 
 ## 1. Introduction Theta Nitro Token (TNT)
