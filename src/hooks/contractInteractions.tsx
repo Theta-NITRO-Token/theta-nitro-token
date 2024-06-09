@@ -1,4 +1,5 @@
 import {ethers, parseUnits} from "ethers";
+import axios from "axios";
 import UniversalProvider from '@walletconnect/universal-provider'
 
 const NITRO_TOKEN_ADDRESS = '0xf1ba704e6483cede432bc1f7fc6082fdef8d3ac4';
@@ -261,12 +262,20 @@ const contractInteraction = {
         const contractAddress = type == 'referral' ? REFERRAL_NFT_ADDRESS : NITRO_NFT_ADDRESS;
         const contract = new ethers.Contract(contractAddress, ABI_NFT, PROVIDER);
         try {
-          let amount : number = await contract.balanceOf(address)
-          let tokenIds = []
-          for(let i=0; i<Number(amount); i++) {
-              let tokenId = await contract.tokenOfOwnerByIndex(address,i);
-              tokenIds.push(Number(tokenId))
-          }
+            let tokenIds: number[] = []
+            const resOverview = await axios.get(`https://api.opentheta.io/v1/items?contractAddress=${contractAddress}&ownerAddress=${address}`)
+            console.log()
+            for(let item of resOverview.data.items) {
+                if(item.listedPrice == null) {
+                    tokenIds.push(item.tokenId)
+                }
+            }
+            // let amount : number = await contract.balanceOf(address)
+          // let tokenIds = []
+          // for(let i=0; i<Number(amount); i++) {
+          //     let tokenId = await contract.tokenOfOwnerByIndex(address,i);
+          //     tokenIds.push(Number(tokenId))
+          // }
           return tokenIds
         } catch (error: any) {
           console.log('error', error)

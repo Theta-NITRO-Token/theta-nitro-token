@@ -125,6 +125,8 @@ export default function MintBox() {
                     Mint
                 </button>
             )}</>
+    } else if (isActiveTime.time == 0){
+        buttonElement = <LoadingIndicator/>
     } else {
         buttonElement = <h2 className={styles.countdown}>{formatTime(isActiveTime.time)}</h2>
     }
@@ -133,7 +135,7 @@ export default function MintBox() {
         <div className="d-flex justify-content-center">
             <div className={styles.textBoxContainer}>
                 <h1 style={{textAlign: 'center', color: '#8e24aa', marginTop: '20px'}}>MINT NITRO</h1>
-                {isActiveTime.isActive || !isConnected ? <h6 className={styles.infoText}>Mint
+                {isActiveTime.isActive ? <h6 className={styles.infoText}>Mint
                     Day {isActiveTime.isActive ? 'ends' : 'starts'} in {formatTime(isActiveTime.time)}</h6> : ''}
                 <div className="container">
                     <div className="row">

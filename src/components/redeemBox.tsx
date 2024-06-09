@@ -81,12 +81,13 @@ export default function RedeemBox() {
         }
         if (isActiveTime.time == 0) {
             getActive()
-        }
-        const intervalId = setInterval(() => {
-            setIsActiveTime({isActive:isActiveTime.isActive, time: isActiveTime.time - 1});
-        }, 1000);
+        } else {
+            const intervalId = setInterval(() => {
+                setIsActiveTime({isActive:isActiveTime.isActive, time: isActiveTime.time - 1});
+            }, 1000);
 
-        return () => clearInterval(intervalId);
+            return () => clearInterval(intervalId);
+        }
     }, [isActiveTime.time]);
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -155,7 +156,7 @@ export default function RedeemBox() {
         <div className="d-flex justify-content-center">
             <div className={styles.textBoxContainer}>
                 <h1 style={{textAlign: 'center', color: '#8e24aa', marginTop: '20px'}}>Redeem NITRO</h1>
-                <h6 className={styles.infoText}>Mint Day {isActiveTime.isActive ? 'ends' : 'starts'} in {formatTime(isActiveTime.time)}</h6>
+                {isActiveTime.time == 0 ? <div style={{height: "50px", marginTop: "-20px"}}><LoadingIndicator/></div> : <h6 className={styles.infoText}>Mint Day {isActiveTime.isActive ? 'ends' : 'starts'} in {formatTime(isActiveTime.time)}</h6>}
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 d-flex justify-content-center align-items-center">
