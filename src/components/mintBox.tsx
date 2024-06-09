@@ -46,6 +46,7 @@ export default function MintBox() {
                 // setTFuelAmount(tfuel);
                 console.log("New Request")
                 const resIsActiveTime = await blockchainInteraction.getMintingActive();
+                console.log(resIsActiveTime)
                 setIsActiveTime(resIsActiveTime)
                 const fee = parseFloat(await blockchainInteraction.getMintingFee())/100;
                 setFee(fee);

@@ -4,7 +4,7 @@
 
 **Audit: [NITRO TNT20 Token Audit](https://github.com/TechRate/Smart-Contract-Audits/blob/main/Май_2024/ThetaNitroToken.pdf)**
 
-**Contract Theta NITRO Token:**
+**Contract Theta NITRO Token:** 0xf1ba704e6483cede432bc1f7fc6082fdef8d3ac4
 
 **Contract Nitro Redeemable NFT:** 0x0435f034c8e5f77f58548dce0ab8122bfd4530b7
 

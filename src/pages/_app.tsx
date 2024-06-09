@@ -65,23 +65,23 @@ const ethersConfig = defaultConfig({
 	enableInjected: true, // true by default
 	enableCoinbase: true, // true by default
 	rpcUrl: '...', // used for the Coinbase SDK
-	defaultChainId: 365, // used for the Coinbase SDK
+	defaultChainId: 361, // used for the Coinbase SDK
 })
 
 // 5. Create a Web3Modal instance
 createWeb3Modal({
 	ethersConfig,
-	chains: [testnet,mainnet],
+	chains: [mainnet],
 	projectId,
 	enableAnalytics: true, // Optional - defaults to your Cloud configuration
 	tokens: {
-		365: {
-			address: '0x9950e7c7e2ff63fea95bfcc17e1f4916ef9e7917',
-			image: '/theta_token.svg' //optional
+		361: {
+			address: '0xf1ba704e6483cede432bc1f7fc6082fdef8d3ac4',
+			image: '/nitro_token.png' //optional
 		}
 	},
 	chainImages: {
-		365: 'theta_token.svg',
+		// 365: 'theta_token.svg',
 		361: 'theta_token.svg',
 	},
 	themeVariables: {

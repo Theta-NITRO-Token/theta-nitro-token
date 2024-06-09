@@ -1,10 +1,10 @@
 import {ethers, parseUnits} from "ethers";
 import UniversalProvider from '@walletconnect/universal-provider'
 
-const NITRO_TOKEN_ADDRESS = '0x29a7e256ed510e2249713347ce8f441fab6aab28';
-const NITRO_NFT_ADDRESS = '0x94a172bc5c76cdf3ea08d50690a99598194c840e';
-const REFERRAL_NFT_ADDRESS = '0x186ce83ec313488e8ce922f36e3291b730e2181f';
-const RPC = 'https://eth-rpc-api-testnet.thetatoken.org/rpc';
+const NITRO_TOKEN_ADDRESS = '0xf1ba704e6483cede432bc1f7fc6082fdef8d3ac4';
+const NITRO_NFT_ADDRESS = '0x0435f034c8e5f77f58548dce0ab8122bfd4530b7';
+const REFERRAL_NFT_ADDRESS = '0x5eca41b572b1eb32b3917fff69b5025ea1876be7';
+const RPC = 'https://eth-rpc-api.thetatoken.org/rpc';
 const PROVIDER = new ethers.JsonRpcProvider(RPC);
 const ABI_NITRO = [
     "function FeeBasisPoints(uint256) view returns (uint256)",
