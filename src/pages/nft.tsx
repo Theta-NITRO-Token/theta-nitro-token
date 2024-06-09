@@ -89,7 +89,7 @@ const NFTPage = () => {
             <LoadingIndicator/>
         ) : (
             // If loading is false, render the mint button
-            <button className={`${styles.button} btn btn-primary`} type="button" onClick={() => window.open('https://opentheta.io', '_blank')}>Buy NFT on OpenTheta</button>
+            <button className={`${styles.button} btn btn-primary`} type="button" onClick={() => window.open('https://opentheta.io/collection/nitro-redeemable', '_blank')}>Buy NFT on OpenTheta</button>
         )}</>
     } else if(isApproved) {
         buttonElement = <>{isLoading ? (

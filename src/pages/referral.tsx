@@ -124,7 +124,7 @@ const ReferralPage = () => {
                                             onClick={setReferral}>
                                         Set Referral Address
                                     </button>
-                                )) : <button className={`${styles.button} btn btn-primary`} type="button" onClick={() => window.open('https://opentheta.io', '_blank')}>Buy NFT on OpenTheta</button>
+                                )) : <button className={`${styles.button} btn btn-primary`} type="button" onClick={() => window.open('https://opentheta.io/collection/nitro-referral', '_blank')}>Buy NFT on OpenTheta</button>
                                 ): <div style={{paddingBottom: '20px'}}>
                                     <w3m-button balance={'hide'} size={'md'}/>
                                 </div>}
