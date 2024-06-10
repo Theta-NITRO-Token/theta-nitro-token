@@ -82,7 +82,7 @@ const contractInteraction = {
             const signer = await provider.getSigner();
             const contract  = new ethers.Contract(NITRO_TOKEN_ADDRESS, ABI_NITRO, signer);
             const signerAddress = await signer.getAddress();
-            console.log(ethers.parseUnits(referralId.toString()))
+            console.log(referralId.toString())
             await Promise.all([
                 waitForEventComplex(
                     provider,
@@ -94,7 +94,7 @@ const contractInteraction = {
                 ),
                 contract.mintWithReferral(
                     signerAddress,
-                    ethers.parseUnits(referralId.toString()),
+                    referralId,
                     { value: ethers.parseEther(tfuelAmount.toString()) }
                 ),
             ]);
