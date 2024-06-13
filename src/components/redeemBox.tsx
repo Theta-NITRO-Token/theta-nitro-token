@@ -17,7 +17,7 @@ export default function RedeemBox() {
 
     const [tokenAmounts, setTokenAmounts] = useGlobalState('tokenAmounts');
     const [userBalance, setUserBalance] = useGlobalState('userNitroBalance');
-    const [fee, setFee] = useState(0);
+    // const [fee, setFee] = useState(0);
     const [isLoading, setLoading] = useState(false);
     const [inputValue, setInputValue] = useState<number | ''>('');
     const [isActiveTime, setIsActiveTime] = useGlobalState('isActiveTime');
@@ -33,19 +33,19 @@ export default function RedeemBox() {
     };
 
     // Use useEffect to handle the asynchronous operation
-    useEffect(() => {
-        const fetchAmounts = async () => {
-            try {
-                const fee = parseFloat(await blockchainInteraction.getMintingFee())/100;
-                setFee(fee);
-            } catch (error) {
-                console.error("Failed to fetch fee and isActive", error);
-                // Optionally handle errors, e.g., by setting an error state
-            }
-        };
-
-        fetchAmounts();
-    }, []);
+    // useEffect(() => {
+    //     const fetchAmounts = async () => {
+    //         try {
+    //             const fee = parseFloat(await blockchainInteraction.getMintingFee())/100;
+    //             setFee(fee);
+    //         } catch (error) {
+    //             console.error("Failed to fetch fee and isActive", error);
+    //             // Optionally handle errors, e.g., by setting an error state
+    //         }
+    //     };
+    //
+    //     fetchAmounts();
+    // }, []);
 
     useEffect(() => {
         // Check if connected and chainId is mainnet, if not, switch network
@@ -176,7 +176,7 @@ export default function RedeemBox() {
                         </div>
                     </div>
                 </div>
-                <p className={styles.infoText}>You get ~{typeof inputValue === "number" ? ((inputValue / tokenAmounts.nitro * tokenAmounts.tfuel) * (100-fee)/100).toFixed(2) : 0} TFuel ({isActiveTime.isActive ? 0 : 2}% Fee)</p>
+                <p className={styles.infoText}>You get ~{typeof inputValue === "number" ? ((inputValue / tokenAmounts.nitro * tokenAmounts.tfuel) * (100 - (isActiveTime.isActive ? 0 : 2))/100).toFixed(2) : 0} TFuel ({isActiveTime.isActive ? 0 : 2}% Fee)</p>
                 <p className={styles.infoText}>(1 Nitro
                     = {tokenAmounts.nitro > 0 ? (tokenAmounts.tfuel / tokenAmounts.nitro).toFixed(2) : 0} TFuel)</p>
                 <div className="container">
