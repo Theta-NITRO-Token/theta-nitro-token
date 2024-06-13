@@ -168,7 +168,7 @@ export default function Home() {
 							<div className="row">
 							<div
 									className="col-md-12 d-flex justify-content-center align-items-center align-content-center">
-									<button className={`${styles.button} btn btn-primary`} type="button" onClick={() => window.open('https://swap.thetatoken.org/swap', '_blank')}>Go To ThetaSwap</button>
+									<button className={`${styles.button} btn btn-primary`} type="button" onClick={() => window.open('https://swap.thetatoken.org/swap?tokenAddressInput=0x4dc08b15ea0e10b96c41aec22fab934ba15c983e&tokenAddressOutput=0xf1ba704e6483cede432bc1f7fc6082fdef8d3ac4', '_blank')}>Go To ThetaSwap</button>
 								</div>
 							</div>
 						</div>
