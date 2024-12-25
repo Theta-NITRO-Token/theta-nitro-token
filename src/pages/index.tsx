@@ -12,6 +12,7 @@ import {useGlobalState} from "@/hooks/globalState";
 import RedeemBox from "@/components/redeemBox";
 import Notification from "@/components/notification";
 import {useWeb3ModalAccount} from '@web3modal/ethers/react';
+// import WertioWidgetButton from "@/components/WertioWidgetButton";
 
 const TEXT_ROW1 = [
 	{
@@ -89,6 +90,7 @@ export default function Home() {
 		<>
 			<Navbar/>
 			<section className={styles.heroSection}>
+				{/*<WertioWidgetButton address={'0x'} onClose={()=>{}}/>*/}
 				<div className={`${styles.divHero} col d-flex flex-column`}>
 					<div className="container">
 						<div className="row">
@@ -140,7 +142,7 @@ export default function Home() {
 									<Image src="/nitro_token_background.png" alt="NITRO Token"
 										   className={styles.tokenImageLarge}
 										   width={35} height={35}/>
-									<h1>= {tokenAmounts.nitro != 0 ? (tokenAmounts.tfuel / tokenAmounts.nitro).toFixed(2) : 0}</h1>
+									<h1>= {tokenAmounts.nitro != 0 ? (tokenAmounts.tfuel / tokenAmounts.nitro).toFixed(3) : 0}</h1>
 									<Image src="tfuel_token.svg" alt="TFuel Token" className={styles.tokenImageLarge}
 										   width={35} height={35}/>
 								</div>
